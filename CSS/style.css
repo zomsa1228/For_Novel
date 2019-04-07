@@ -104,7 +104,8 @@ nav label.item {
   padding: .2em 2em;
   font-size: 1.5em;
   color: white;
-  text-decoration: none;
+	text-decoration: none;
+	cursor: pointer;
   font-weight: 500;
   transform: translateX(-100%);
   transition: color .15s, transform .5s;
@@ -219,39 +220,61 @@ h1 {
   font-weight: 700;
 }
 
-.ac_menu{
-    width: 300px;
-  }
-  
-  /* メニューの部分 */
-  .ac_menu label.icon {
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    display: block;
-    margin: 0;
-    border: 1px solid #fff;
-    cursor:pointer;
-  }
-  .ac_menu input[type="checkbox"].on-off{
-    display: none;
-  }
-  
-  /* コンテンツの部分 */
-  .ac_menu div {
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    margin: 0;
-    padding: 0 10px;
-    list-style: none;
-  }
-  .ac_menu input[type="checkbox"].on-off + div {
-    height: 0;
-    overflow: hidden;
-  }
-  .ac_menu input[type="checkbox"].on-off:checked + div {
-    height: 100px;
-  }
+#mude-item {
+	margin: 0;
+	padding-left: 4em;
+	list-style: none;
+}
+
+.according {
+	display: none;
+}
+
+.ac_menu {
+	width: 300px;
+}
+
+.menu-index {
+	overflow-y: hidden;
+	font-size: 21px;
+	max-height: 0;
+	transition-property: max-height, font-size;
+	transition-duration: 0.5s;
+}
+
+[id="mude"]:checked ~ #mude-item {
+	max-height: 56px;
+}
+
+/* メニューの部分 */
+.ac_menu label.icon {
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	display: block;
+	margin: 0;
+	border: 1px solid #fff;
+	cursor:pointer;
+}
+.ac_menu input[type="checkbox"].on-off{
+	display: none;
+}
+
+/* コンテンツの部分 */
+.ac_menu div {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	margin: 0;
+	padding: 0 10px;
+	list-style: none;
+}
+.ac_menu input[type="checkbox"].on-off + div {
+	height: 0;
+	overflow: hidden;
+}
+.ac_menu input[type="checkbox"].on-off:checked + div {
+	height: 100px;
+}
