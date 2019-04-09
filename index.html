@@ -1,61 +1,65 @@
 <!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>Roimy_Zomsa's novel world</title>
-  
-	  <meta name="author" content="Roimy_Zomsa">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Roimy_Zomsa">
+		<title>Roimy_Zomsa's novel world</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<!--Custom　CSS-->	
 		<link rel="stylesheet" href="./code/css/style.css">
-
-		<!--EX　CSS-->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	  
 		<!--Custom JavaScript-->
-		<script src="./code/JavaScript/accordion.js"></script>
+		<script src="./code/javascript/accordion.js"></script>
+	</head>
 
-</head>
-<body>
-  <script src="js/scripts.js"></script>
-  <input type="checkbox" id="navcheck" role="button" title="menu">
-  <label class="icon" for="navcheck" aria-hidden="true" title="menu">
-	  <span class="burger">
-		  <span class="bar">
-			  <span class="visuallyhidden">Menu</span>
-		  </span>
-	  </span>
-  </label>
+	<body>
+		<input type="checkbox" id="navcheck" role="button" title="menu">
+		<label class="icon" for="navcheck" aria-hidden="true" title="menu">
+			<span class="burger">
+				<span class="bar">
+					<span class="visuallyhidden">Menu</span>
+				</span>
+			</span>
+		</label>
 
-  <nav id="menu">
-		<label class="item">トップページ</label>
-		<label class="item">利用規約</label>
-		<label class="item">Ipsum.</label>
-		<label class="item">Voluptatem.</label>
-		<label class="item">Quibusdam.</label>
-		<label for="mude" class="item">惑星ムード <i class="fas fa-chevron-down"></i></label>
-		<input id="mude" class="according" type="checkbox"></input>
-		<ul id="mude-item" class="menu-index">
-			<li>用語</li>
-			<li>詳細</li>
-		</ul>
-  </nav>
+		<nav id="menu">
+			<label for="top" class="item">トップページ</label>
+			<input id="top" class="according" type="checkbox"></input>
+			<ul id="top-item" class="items">
+				<li>利用規約・ルール</li>
+				<li>よくある質問</li>
+				<li>サンドボックス</li>
+				<li>ひな形</li>
+				<li>外部ソース</li>
+				<li>旧作</li>
+			</ul>
+			<label for="planets" class="item">惑星<i class="fas fa-chevron-down"></i></label>
+			<input id="planets" class="according" type="checkbox"></input>
+			<ul id="planets-item" class="items">
+				<li>ムード</li>
+				<li>イマジニアス</li>
+			</ul>
+			<label for="other" class="item">その他<i class="fas fa-chevron-down"></i></label>
+			<input id="other" class="according" type="checkbox"></input>
+			<ul id="other-item" class="items">
+				<li>参考文献</li>
+			</ul>
+		</nav>
 
-  <div id="top_header">
-		<h1 id="top_title">Project Last Stories</h1>
-	<hr id="title_hr">
+		<div id="top_header">
+			<header>
+				<h1 id="top_title">Project Last Stories</h1>
+			</header>
 
-	</div>
-
-  <main>
-</div>
-		<article class="content">
-			<div class="top-menu-grid">
-					<a href="./code/html/product.html"><div class="novel"><p>作品から探す <i class="fas fa-book"></i></p></div></a>
-				<div class="aria"><p>エリアから探す <i class="fas fa-map-marked-alt"></i></p></div>
-			</div>
-		</article>
-  </main>
-</body>
+			<main>
+				<article class="content">
+					<div class="top-menu-grid">
+						<p><a href="./code/html/product.html">作品から探す <i class="fas fa-book"></i></a></p>
+						<p class="blank-grid-1"></p>
+						<p><a href="./code/html/product.html">エリアから探す <i class="fas fa-map-marked-alt"></i></a></p>
+					</div>
+				</article>
+			</main>
+		</div>
+	</body>
 </html>
