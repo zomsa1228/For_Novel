@@ -1,60 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #444;
+  color: white;
+  font: 1em/1.4 "lato";
+}
+
+header {
+  font-size: 230%;
+  text-align: center;
+  line-height: 1.2;
+  width: 60%;
+  margin: auto;
+  padding: 19% 0 3% 0;
+}
+
+main {
+  padding: 5% 0;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2% 10% 24% 10%;
+}
+
+article {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.3em;
+}
+
+h1 {
+  margin: 0;
+  font-family: "roboto condensed";
+  font-weight: 700;
+  border-bottom: solid #fff .03em;
+}
+
+input {
+  position: fixed;
+  opacity: 0;
+}
+
 /*CSS Grid*/
 .top-menu-grid {
   display: grid; 
-  grid-template-rows: 50%;
-  grid-template-columns: 50% 50%;
-  border: solid 2px;
+  grid-template-rows: 100%;
+  grid-template-columns: 45% 10% 45%;
 }
 
-.novel{
-    grid-column: 1;
-    border:solid 2px;
-    border-radius: 5%;
-    text-align: center;
-    margin: 3px;
+.top-menu-grid p {
+  margin: 0;
 }
 
-.aria{
+.top-menu-grid a {
+  display: inline-block;
+  list-style: 1;
+  background-color: #3398da;
+  border: solid #fff .03em;
+  border-radius: 3px;
+  padding: 4% 13%;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.top-menu-grid a:hover {
+  background-color: #1156a9
+}
+
+.blank-grid-1 {
+  opacity: 0;
+}
+
+.novel {
+  grid-column: 1;
+  border:solid 2px;
+  border-radius: 5%;
+  text-align: center;
+  margin: 3px;
+}
+
+.aria {
   grid-column: 2;
   border:solid 2px;
   border-radius: 5%;
   text-align: center;
   margin: 3px;
 }
+
 /*header*/
-
-#top_header{
-width: 100%;
-height: 100%;
-}
-
-#top_title{
-  text-align: center;
+#top_header {
   width: 100%;
   height: 100%;
-}
-
-#title_hr{
-border: solid 2px;
-width: 50%;
-}
-
-/*main*/
-
-main{
-  text-align: center;
-  margin: 0 auto;
-  padding: 10%;
-  
-}
-a:link { color: #ffffff; }
-a:visited { color: #ffffff; }
-a:hover { color: #ffffff; }
-a:active { color: #ffffff; }
-
-input {
-  position: fixed;
-  opacity: 0;
+  background-color: #3498db;
 }
 
 label.icon {
@@ -245,38 +283,7 @@ main .content {
   width: 1px;
 }
 
-
-
-/* misc */
-body {
-  overflow-x: hidden;
-  background: #444;
-  color: white;
-  font: 1em/1.4 "lato";
-}
-
-main {
-  background: #3498db;
-  padding: 5% 0;
-}
-
-article {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 1.3em;
-}
-@media (min-width: 60em) {
-  article {
-    width: 50%;
-  }
-}
-
-h1 {
-  font: 2.5em/1.4 "roboto condensed";
-  font-weight: 700;
-}
-
-#mude-item {
+.items {
 	margin: 0;
 	padding-left: 4em;
 	list-style: none;
@@ -290,7 +297,7 @@ h1 {
 	width: 300px;
 }
 
-.menu-index {
+#top-item, #planets-item, #other-item {
 	overflow-y: hidden;
 	font-size: 21px;
 	max-height: 0;
@@ -298,8 +305,10 @@ h1 {
 	transition-duration: 0.5s;
 }
 
-[id="mude"]:checked ~ #mude-item {
-	max-height: 56px;
+[id="top"]:checked ~ #top-item,
+[id="planets"]:checked ~ #planets-item,
+[id="other"]:checked ~ #other-item {
+	max-height: 168px;
 }
 
 /* メニューの部分 */
