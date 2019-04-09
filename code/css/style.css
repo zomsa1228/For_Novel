@@ -1,8 +1,8 @@
 /*CSS Grid*/
-.grid {
+.top-menu-grid {
   display: grid; 
-  grid-template-rows: 100px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50%;
+  grid-template-columns: 50% 50%;
   border: solid 2px;
 }
 
@@ -11,6 +11,7 @@
     border:solid 2px;
     border-radius: 5%;
     text-align: center;
+    margin: 3px;
 }
 
 .aria{
@@ -18,6 +19,31 @@
   border:solid 2px;
   border-radius: 5%;
   text-align: center;
+  margin: 3px;
+}
+/*header*/
+
+#top_header{
+height: 200%;
+}
+
+#top_title{
+  text-align: center;
+}
+
+#title_hr{
+border: solid 2px;
+width: 50%;
+}
+
+/*main*/
+
+main{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10%;
+  
 }
 
 input {
