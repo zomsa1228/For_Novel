@@ -1,6 +1,23 @@
 /*CSS Grid*/
 .grid {
   display: grid; 
+  grid-template-rows: 100px;
+  grid-template-columns: 1fr 1fr;
+  border: solid 2px;
+}
+
+.novel{
+    grid-column: 1;
+    border:solid 2px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.aria{
+  grid-column: 2;
+  border:solid 2px;
+  border-radius: 5%;
+  text-align: center;
 }
 
 input {
