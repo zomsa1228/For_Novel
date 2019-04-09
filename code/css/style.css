@@ -24,11 +24,14 @@
 /*header*/
 
 #top_header{
-height: 200%;
+width: 100%;
+height: 100%;
 }
 
 #top_title{
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 #title_hr{
@@ -44,6 +47,8 @@ main{
   padding: 10%;
   
 }
+
+
 
 input {
   position: fixed;
@@ -237,6 +242,8 @@ main .content {
   position: absolute;
   width: 1px;
 }
+
+
 
 /* misc */
 body {
